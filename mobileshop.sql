@@ -130,7 +130,7 @@ CREATE TABLE `product` (
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
 --
--- Đang đổ dữ liệu cho bảng `product`
+-- Dumping data for table `product`
 --
 
 INSERT INTO `product` (`id`, `name`, `brand`, `price`, `image`) VALUES
@@ -151,7 +151,7 @@ INSERT INTO `product` (`id`, `name`, `brand`, `price`, `image`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `shipper`
+-- Table structure for table `shipper`
 --
 
 CREATE TABLE `shipper` (
@@ -162,8 +162,7 @@ CREATE TABLE `shipper` (
   `cost` double(10,2) UNSIGNED NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Đang đổ dữ liệu cho bảng `shipper`
+---- Dumping data for table `shipper`
 --
 
 INSERT INTO `shipper` (`id`, `name`, `age`, `area`, `cost`) VALUES
@@ -177,7 +176,7 @@ INSERT INTO `shipper` (`id`, `name`, `age`, `area`, `cost`) VALUES
 -- --------------------------------------------------------
 
 --
--- Cấu trúc bảng cho bảng `user`
+-- Table structure for table `user`
 --
 
 CREATE TABLE `user` (
@@ -191,8 +190,7 @@ CREATE TABLE `user` (
   `money` double(10,2) UNSIGNED NOT NULL DEFAULT 0.00
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_general_ci;
 
---
--- Đang đổ dữ liệu cho bảng `user`
+---- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `fullname`, `phone`, `avatar`, `city`, `gender`, `address`, `money`) VALUES
@@ -203,7 +201,7 @@ INSERT INTO `user` (`id`, `fullname`, `phone`, `avatar`, `city`, `gender`, `addr
 (4, 'Kevin', '0932733612', 'https://www.shareicon.net/data/128x128/2016/05/26/771187_man_512x512.png', 'FR', 0, NULL, 10.00);
 
 --
--- Chỉ mục cho các bảng đã đổ
+-- Indexes for dumped tables
 --
 
 --
