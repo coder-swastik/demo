@@ -28,7 +28,7 @@ shuffle($productData);
                                 <span><i class="far fa-star"></i></span>
                             </div>
                             <div class="price py-2">
-                                <span>$
+                                <span>Rs
                                     <?php echo $item['price'] ?? '0'; ?>
                                 </span>
                             </div>
