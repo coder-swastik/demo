@@ -134,19 +134,19 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `brand`, `price`, `image`) VALUES
-(1, 'Samsung Galaxy 10', 1, 152.00, './assets/products/1.png'),
-(2, 'Redmi Note 7', 2, 122.00, './assets/products/2.png'),
-(3, 'Redmi Note 6', 2, 112.00, './assets/products/3.png'),
-(4, 'Redmi Note 5', 2, 102.00, './assets/products/4.png'),
-(5, 'Redmi Note 4', 2, 82.00, './assets/products/5.png'),
-(6, 'Redmi Note 8', 2, 132.00, './assets/products/6.png'),
-(7, 'Redmi Note 9', 2, 142.00, './assets/products/8.png'),
-(8, 'Samsung Galaxy A23', 1, 122.00, './assets/products/10.png'),
-(9, 'Samsung Galaxy S6', 1, 122.00, './assets/products/11.png'),
-(10, 'Samsung Galaxy S7', 1, 132.00, './assets/products/12.png'),
-(11, 'Apple iPhone X', 3, 82.00, './assets/products/13.png'),
-(12, 'iPhone 13 ProMax', 3, 142.00, './assets/products/14.png'),
-(13, 'iPhone 12 Pro', 3, 122.00, './assets/products/15.png');
+(1, 'Samsung Galaxy 10', 1, 152.00, './assets/products/car01.jpg'),
+(2, 'Redmi Note 7', 2, 122.00, './assets/products/car01.jpg'),
+(3, 'Redmi Note 6', 2, 112.00, './assets/products/car01.jpg'),
+(4, 'Redmi Note 5', 2, 102.00, './assets/products/car01.jpg'),
+(5, 'Redmi Note 4', 2, 82.00, './assets/products/car01.jpg'),
+(6, 'Redmi Note 8', 2, 132.00, './assets/products/car01.jpg'),
+(7, 'Redmi Note 9', 2, 142.00, './assets/products/car01.jpg'),
+(8, 'Samsung Galaxy A23', 1, 122.00, './assets/products/car01.jpg'),
+(9, 'Samsung Galaxy S6', 1, 122.00, './assets/products/car01.jpg'),
+(10, 'Samsung Galaxy S7', 1, 132.00, './assets/products/car01.jpgg'),
+(11, 'Apple iPhone X', 3, 82.00, './assets/products/car01.jpg'),
+(12, 'iPhone 13 ProMax', 3, 142.00, './assets/products/car01.jpg'),
+(13, 'iPhone 12 Pro', 3, 122.00, './assets/products/car01.jpg');
 
 -- --------------------------------------------------------
 
@@ -205,13 +205,13 @@ INSERT INTO `user` (`id`, `fullname`, `phone`, `avatar`, `city`, `gender`, `addr
 --
 
 --
--- Chỉ mục cho bảng `account`
+--Index for table `account`
 --
 ALTER TABLE `account`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `bill`
+-- Index for table `bill`
 --
 ALTER TABLE `bill`
   ADD PRIMARY KEY (`id`),
@@ -220,7 +220,7 @@ ALTER TABLE `bill`
   ADD KEY `bill_id` (`cart_id`);
 
 --
--- Chỉ mục cho bảng `cart`
+--Index for table `cart`
 --
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`),
@@ -229,94 +229,83 @@ ALTER TABLE `cart`
   ADD KEY `user_id` (`user_id`);
 
 --
--- Chỉ mục cho bảng `manufacturer`
---
+-- Index for table `manufacturer`--
 ALTER TABLE `manufacturer`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `product`
---
+-- Index for table `product`--
 ALTER TABLE `product`
   ADD PRIMARY KEY (`id`),
   ADD KEY `brand` (`brand`),
   ADD KEY `id` (`id`);
 
 --
--- Chỉ mục cho bảng `shipper`
---
+ --Index for table `shipper`--
+
 ALTER TABLE `shipper`
   ADD PRIMARY KEY (`id`);
 
 --
--- Chỉ mục cho bảng `user`
---
+-- Index for table `user`
+-- --
 ALTER TABLE `user`
   ADD PRIMARY KEY (`id`),
   ADD KEY `id` (`id`);
 
 --
--- AUTO_INCREMENT cho các bảng đã đổ
---
+--AUTO_INCREMENT for dumped tables--
 
 --
--- AUTO_INCREMENT cho bảng `account`
+-- AUTO_INCREMENT for table `account`
 --
 ALTER TABLE `account`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
--- AUTO_INCREMENT cho bảng `bill`
---
+-- AUTO_INCREMENT for table `bill`--
 ALTER TABLE `bill`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
--- AUTO_INCREMENT cho bảng `cart`
+-- AUTO_INCREMENT for table `cart`
 --
 ALTER TABLE `cart`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
--- AUTO_INCREMENT cho bảng `product`
---
+-- AUTO_INCREMENT for table `cart`--
 ALTER TABLE `product`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
--- AUTO_INCREMENT cho bảng `user`
---
+-- AUTO_INCREMENT for table `cart`--
 ALTER TABLE `user`
   MODIFY `id` int(10) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=1;
 
 --
--- Các ràng buộc cho các bảng đã đổ
---
+-- AUTO_INCREMENT for table `cart`--
 
 --
--- Các ràng buộc cho bảng `account`
---
+-- AUTO_INCREMENT for table `cart`--
 ALTER TABLE `account`
   ADD CONSTRAINT `account_ibfk_1` FOREIGN KEY (`id`) REFERENCES `user` (`id`);
 
 --
--- Các ràng buộc cho bảng `bill`
---
+-- AUTO_INCREMENT for table `cart`--
 ALTER TABLE `bill`
   ADD CONSTRAINT `bill_ibfk_1` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `bill_ibfk_2` FOREIGN KEY (`shipper_id`) REFERENCES `shipper` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `bill_ibfk_3` FOREIGN KEY (`cart_id`) REFERENCES `cart` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Các ràng buộc cho bảng `cart`
---
+-- AUTO_INCREMENT for table `cart`--
 ALTER TABLE `cart`
   ADD CONSTRAINT `cart_ibfk_1` FOREIGN KEY (`item_id`) REFERENCES `product` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   ADD CONSTRAINT `cart_ibfk_2` FOREIGN KEY (`user_id`) REFERENCES `user` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 
 --
--- Các ràng buộc cho bảng `product`
---
+-- Constraints for table `product`--
 ALTER TABLE `product`
   ADD CONSTRAINT `product_ibfk_1` FOREIGN KEY (`brand`) REFERENCES `manufacturer` (`id`) ON DELETE NO ACTION ON UPDATE NO ACTION;
 COMMIT;

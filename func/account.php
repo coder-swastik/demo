@@ -13,7 +13,7 @@ class Account
     }
 
     // fetch account data using getData Method
-    public function getData($table = 'record')
+    public function getData($table = 'account')
     {
         $sql = "SELECT * FROM {$table}";
         $result = $this->db->con->query($sql);
