@@ -6,7 +6,7 @@ shuffle($productData);
 ?>
 <section id="bike-sale">
     <div class="container py-5">
-        <h4 class="font-size-20">Bike </h4>
+        <h4 class="font-size-20">Bike</h4>
         <hr>
         <!-- owl carousel -->
         <div class="owl-carousel owl-theme">

@@ -52,8 +52,7 @@
                 <a href="./login.php" class="px-3 border-start text-dark">
                     <?php if ($_SESSION['logged'] == true) {
                         echo $acc->getAccount($_COOKIE['user_id'])['username']; ?>
-                        <img src="<?php echo $acc->getAccount($_COOKIE['user_id'], 'user')['avatar'] ?>" alt="avatar"
-                            class="rounded-circle" style="width: 18px;height: 18px;" />
+                        <img src="<?php echo $acc->getAccount($_COOKIE['user_id'], 'user') ?>" />
                     <?php } else {
                         echo "Login";
                     } ?>
@@ -66,8 +65,8 @@
 
         <!-- Primary Navigation -->
         <nav class="navbar navbar-expand-lg px-3 navbar-dark color-second-bg">
-            <img src="./assets/phone.png" class="logo">
-            <a class="navbar-brand" href="./index.php">Mobile Shop</a>
+            <img src="./assets/saadhanu-logo.png" class="logo">
+            <a class="navbar-brand" href="./index.html">Sadhannu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -75,22 +74,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.php">Home</a>
+                        <a class="nav-link" href="./index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php#top-sale">Top sale</a>
+                        <a class="nav-link" href="./index.html#top-sale">Cars</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php#special-price">Special Price</a>
+                        <a class="nav-link" href="./index.html#2-Wheelers">2-Wheelers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php#new-phones">New Phones</a>
+                        <a class="nav-link" href="./index.html#special-price">Special Price</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.php#blogs">Blogs</a>
+                        <a class="nav-link" href="./index.html#new-phones">Second Hand</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cart.php">Cart</a>
+                        <a class="nav-link" href="./cart.html">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Coming Soon</a>

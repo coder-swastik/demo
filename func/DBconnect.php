@@ -1,5 +1,6 @@
 <?php
-
+error_reporting(E_ALL);
+ini_set('display_errors',1);
 class Connect
 {
     // Database Connection Properties
@@ -18,6 +19,10 @@ class Connect
         if ($this->con->connect_error) {
             echo "Fail to connect! " . $this->con->connect_error;
         }
+        else{
+            echo "connection successful";
+        }
+        
     }
 
     public function __destruct()
