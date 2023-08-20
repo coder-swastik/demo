@@ -14,21 +14,21 @@
                             <div class="form-group">
                                 <label for="username" class="form-label">Username (*)</label>
                                 <input id="username" name="username" type="text" rules="required|min:3|max:10"
-                                    placeholder="Nhập tên đăng nhập của bạn" class="form-control">
+                                    placeholder="Enter the username" class="form-control">
                                 <span class="form-message"></span>
                             </div>
 
                             <div class="form-group">
                                 <label for="password" class="form-label">Password (*)</label>
                                 <input id="password" name="password" type="password" rules="required|min:3"
-                                    placeholder="Nhập mật khẩu" class="form-control">
+                                    placeholder="Enter the password" class="form-control">
                                 <span class="form-message"></span>
                             </div>
 
                             <div class="form-group">
                                 <label for="privilege" class="form-label">Privilege (*)</label>
                                 <select id="privilege" name="privilege" rules="required" class="form-control">
-                                    <option value="">-- Chọn đặc quyền --</option>
+                                    <option value="">-- Choose --</option>
                                     <option value="User">User</option>
                                     <option value="Admin">Admin</option>
                                 </select>
