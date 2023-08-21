@@ -51,11 +51,7 @@ foreach ($product->getData() as $item):
                         <!--- product price -->
                         <table class="my-3 font-size-14">
                             <tr>
-                                <td>M.R.P:</td>
-                                <td><strike>Rs162.00</strike></td>
-                            </tr>
-                            <tr>
-                                <td>Deal Price:</td>
+                                <td>MPR:       </td>
                                 <td class="font-size-20 text-danger">Rs
                                     <span>
                                         <?php echo $item['price'] ?? 0; ?>
@@ -66,8 +62,8 @@ foreach ($product->getData() as $item):
                                 </td>
                             </tr>
                             <tr>
-                                <td>You Save:</td>
-                                <td><span class="font-size-16 text-danger">Rs152.00</span></td>
+                                <td>Discount: </td>
+                                <td><span class="font-size-16 text-danger"> Upto 10%</span></td>
                             </tr>
                         </table>
                         <!-- !product price -->

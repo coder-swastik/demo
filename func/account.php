@@ -88,7 +88,6 @@ class Account
         $password = null,
         $phone = null,
         $email = null,
-        $city = null,
         $gender = null,
         $address = null
     )
@@ -99,7 +98,6 @@ class Account
             && $password != null
             && $phone != null
             && $email != null
-            && $city != null
             && $gender != null
             && $address != null
         ) {
@@ -110,7 +108,7 @@ class Account
                 $address = null;
             }
             $sqlAccount = "INSERT INTO account(username, password, email) VALUES ('{$username}','{$password}','{$email}')";
-            $sqlUser = "INSERT INTO user(fullname, phone, city, gender, address) VALUES ('{$fullname}','{$phone}','{$city}','{$gender}','{$address}')";
+            $sqlUser = "INSERT INTO user(fullname, phone, gender, address) VALUES ('{$fullname}','{$phone}','{$gender}','{$address}')";
             $resultAcc = $this->db->con->query($sqlAccount);
             $resultUser = $this->db->con->query($sqlUser);
             if ($resultAcc && $resultUser) {

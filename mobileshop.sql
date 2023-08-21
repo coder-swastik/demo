@@ -187,7 +187,6 @@ CREATE TABLE `user` (
   `id` int(10) UNSIGNED NOT NULL,
   `fullname` varchar(30) NOT NULL,
   `phone` varchar(10) DEFAULT NULL,
-  `avatar` varchar(100) DEFAULT NULL,
   `city` varchar(30) NOT NULL,
   `gender` tinyint(3) NOT NULL,
   `address` varchar(100) DEFAULT NULL,
@@ -197,12 +196,12 @@ CREATE TABLE `user` (
 ---- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `fullname`, `phone`, `city`, `gender`, `address`, `money`) VALUES
-(0, 'Guest', NULL, NULL, 'VN', 0, NULL, 0.00),
-(1, 'Admin', '0943284322', 'VN', 0, NULL, 99999.99),
-(2, 'David', '0828382237', 'US', 0, NULL, 50.00),
-(3, 'Lenin', '0723923232', 'UK', 1, NULL, 100.00),
-(4, 'Kevin', '0932733612', 'FR', 0, NULL, 10.00);
+INSERT INTO `user` (`id`, `fullname`, `phone`, `gender`, `address`, `money`) VALUES
+(0, 'Guest', NULL, 'VN', 0, NULL, 0.00),
+(1, 'Admin', '0943284322', 0, NULL, 99999.99),
+(2, 'David', '0828382237', 0, NULL, 50.00),
+(3, 'Lenin', '0723923232' 1, NULL, 100.00),
+(4, 'Kevin', '0932733612', 0, NULL, 10.00);
 
 --
 -- Indexes for dumped tables
@@ -225,13 +224,13 @@ ALTER TABLE `bill`
 
 --
 --Index for table `cart`
---
+--remaining down
 ALTER TABLE `cart`
   ADD PRIMARY KEY (`id`),
   ADD KEY `item_id` (`item_id`),
   ADD KEY `id` (`id`),
   ADD KEY `user_id` (`user_id`);
-
+-- remaining up
 --
 -- Index for table `manufacturer`--
 ALTER TABLE `manufacturer`
