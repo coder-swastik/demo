@@ -23,7 +23,7 @@
     <script src="https://kit.fontawesome.com/7860568151.js" crossorigin="anonymous"></script>
 
     <!-- form validate -->
-    <link rel="stylesheet" href="https://ltp.crfnetwork.cyou/form-validate/css/style.css">
+    <link rel="stylesheet" href="func/style.css">
 
     <!-- Custom CSS file -->
     <link rel="stylesheet" href="./style.css">
@@ -66,7 +66,7 @@
         <!-- Primary Navigation -->
         <nav class="navbar navbar-expand-lg px-3 navbar-dark color-second-bg">
             <img src="./assets/saadhanu-logo.png" class="logo">
-            <a class="navbar-brand" href="./index.html">Sadhannu</a>
+            <a class="navbar-brand" href="./index.php">Sadhannu</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                 aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>

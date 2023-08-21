@@ -119,7 +119,6 @@ if ($_SERVER['REQUEST_METHOD'] == "POST") {
             $_POST['password'],
             $_POST['phone'],
             $_POST['email'],
-            $_POST['city'],
             $_POST['gender'],
             $_POST['address']
         );

@@ -10,7 +10,7 @@
                         <?php echo $acc->getAccount($_COOKIE['user_id'])['username'] ?>!
                     </span>
                 </h3>
-                <img src="<?php echo $acc->getAccount($_COOKIE['user_id'], 'user')['avatar'] ?>" alt="avatar"
+                <img src="<?php echo $acc->getAccount($_COOKIE['user_id'], 'user') ?>" 
                     class="rounded-circle my-3" style="width: 120px;height: 120px;" />
                 <h5 class="mb-2">
                     <strong>
@@ -26,7 +26,7 @@
                 <p class="mb-2">
                     <span>Money: </span>
                     <strong class="text-danger">
-                        $
+                        Rs
                         <?php echo $acc->getAccount($_COOKIE['user_id'], 'user')['money'] ?>
                     </strong>
                 </p>
@@ -39,14 +39,14 @@
                         <div class="form-group">
                             <label for="username" class="form-label">Username (*)</label>
                             <input id="username" name="username" type="text" rules="required|min:3|max:10"
-                                placeholder="Nhập tên đăng nhập của bạn" class="form-control">
+                                placeholder="Enter your username" class="form-control">
                             <span class="form-message"></span>
                         </div>
 
                         <div class="form-group">
                             <label for="password" class="form-label">Password (*)</label>
                             <input id="password" name="password" type="password" rules="required|min:3"
-                                placeholder="Nhập mật khẩu" class="form-control">
+                                placeholder="Enter your password" class="form-control">
                             <span class="form-message"></span>
                         </div>
                     </div>
