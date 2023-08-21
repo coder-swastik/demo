@@ -52,11 +52,11 @@ foreach ($product->getData() as $item):
                         <table class="my-3 font-size-14">
                             <tr>
                                 <td>M.R.P:</td>
-                                <td><strike>$162.00</strike></td>
+                                <td><strike>Rs162.00</strike></td>
                             </tr>
                             <tr>
                                 <td>Deal Price:</td>
-                                <td class="font-size-20 text-danger">$
+                                <td class="font-size-20 text-danger">Rs
                                     <span>
                                         <?php echo $item['price'] ?? 0; ?>
                                     </span>
@@ -67,7 +67,7 @@ foreach ($product->getData() as $item):
                             </tr>
                             <tr>
                                 <td>You Save:</td>
-                                <td><span class="font-size-16 text-danger">$152.00</span></td>
+                                <td><span class="font-size-16 text-danger">Rs152.00</span></td>
                             </tr>
                         </table>
                         <!-- !product price -->
@@ -79,7 +79,7 @@ foreach ($product->getData() as $item):
                                     <div class="font-size-20 my-2 color-second">
                                         <span class="fas fa-retweet border p-3 rounded-pill"></span>
                                     </div>
-                                    <a href="#" class="font-size-12">10 Days <br> Replacement</a>
+                                    <a href="#" class="font-size-12"> Fastest<br> Delivery</a>
                                 </div>
                                 <div class="return text-center me-5">
                                     <div class="font-size-20 my-2 color-second">
@@ -91,7 +91,7 @@ foreach ($product->getData() as $item):
                                     <div class="font-size-20 my-2 color-second">
                                         <span class="fas fa-check-double border p-3 rounded-pill"></span>
                                     </div>
-                                    <a href="#" class="font-size-12">1 Year <br>Warranty</a>
+                                    <a href="#" class="font-size-12">Warranty</a>
                                 </div>
                             </div>
                         </div>
@@ -99,10 +99,10 @@ foreach ($product->getData() as $item):
                         <hr>
                         <!-- order-details -->
                         <div id="order-details" class="d-flex flex-column">
-                            <small>Delivery by : Mar 29 - Apr 1</small>
-                            <small>Sold by <a href="#">Daily Electronics </a>(4.5 out of 5 | 18,198 ratings)</small>
+                            <small>Delivery by 1 week</small>
+                            <small>Sold by <a href="#">Sadhannu </a>(4.5 out of 5 | 1800 ratings)</small>
                             <small><i class="fas fa-map-marker-alt color-primary"></i>&nbsp;&nbsp;Deliver to Customer -
-                                424201</small>
+                                424</small>
                         </div>
                         <!-- !order-details -->
                         <div class="row align-items-center">
@@ -146,13 +146,13 @@ foreach ($product->getData() as $item):
                             <h6>Size :</h6>
                             <div class="d-flex justify-content-between w-75">
                                 <div class="border p-2">
-                                    <button type="button" class="btn p-0 font-size-14">4GB RAM</button>
+                                    <button type="button" class="btn p-1 font-size-16">XUV</button>
                                 </div>
                                 <div class="border p-2">
-                                    <button type="button" class="btn p-0 font-size-14">6GB RAM</button>
+                                    <button type="button" class="btn p-1 font-size-16">XXL</button>
                                 </div>
                                 <div class="border p-2">
-                                    <button type="button" class="btn p-0 font-size-14">8GB RAM</button>
+                                    <button type="button" class="btn p-1 font-size-16">XX</button>
                                 </div>
                             </div>
                         </div>

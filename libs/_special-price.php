@@ -41,7 +41,7 @@ $in_cart = $cart->getCartId($cart->getCart($_COOKIE['user_id'] ?? 0));
                                     <span><i class="far fa-star"></i></span>
                                 </div>
                                 <div class="price py-2">
-                                    <span>$
+                                    <span>Rs
                                         <?php echo $item['price'] ?? 0 ?>
                                     </span>
                                 </div>

@@ -4,7 +4,7 @@ shuffle($productData);
 ?>
 <section id="new-phones">
     <div class="container">
-        <h4 class="font-size-20">New Phones</h4>
+        <h4 class="font-size-20">New Vehicles</h4>
         <hr>
         <!-- owl carousel -->
         <div class="owl-carousel owl-theme">
@@ -25,7 +25,7 @@ shuffle($productData);
                                 <span><i class="far fa-star"></i></span>
                             </div>
                             <div class="price py-2">
-                                <span>$
+                                <span>Rs
                                     <?php echo $item['price'] ?? '0'; ?>
                                 </span>
                             </div>

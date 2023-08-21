@@ -68,7 +68,7 @@
                         </div>
                         <div class="col-sm-2 text-right">
                             <div class="font-size-20 text-danger">
-                                $<span class="product_price" data-id="<?php echo $item['id'] ?? '0'; ?>">
+                                Rs<span class="product_price" data-id="<?php echo $item['id'] ?? '0'; ?>">
                                     <?php
                                     $price = $item['price'] ?? 0;
                                     $subTotal[] = $price;
@@ -96,7 +96,7 @@
                                 <?php echo isset($subTotal) ? count($subTotal) : 0; ?> item) :
                             </p>
                             <p class="text-danger">
-                                <span>$</span>
+                                <span>Rs</span>
                                 <span id="deal-price">
                                     <?php echo isset($subTotal) ? $cart->getSum($subTotal) : 0; ?>
                                 </span>

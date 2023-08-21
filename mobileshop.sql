@@ -43,9 +43,9 @@ CREATE TABLE `account` (
 INSERT INTO `account` (`id`, `username`, `password`, `email`, `privilege`) VALUES
 (0, 'guest', 'guest', 'guest@gmail.com', 0),
 (1, 'admin', 'admin', 'admin@gmail.com', 1),
-(2, 'david', 'test', 'david@gmail.com', 0),
-(3, 'lenin', '12345', 'lenin@gmail.com', 0),
-(4, 'kevin', 'password', 'kevin@gmail.com', 0);
+(2, 'david', 'test', 'swastik@gmail.com', 0),
+(3, 'lenin', '12345', 'sujan@gmail.com', 0),
+(4, 'kevin', 'password', 'banshaj@gmail.com', 0);
 
 -- --------------------------------------------------------
 
@@ -110,11 +110,11 @@ CREATE TABLE `manufacturer` (
 --
 
 INSERT INTO `manufacturer` (`id`, `brand`, `company`, `headquarter`) VALUES
-(1, 'SamSung', 'Samsung Electronics', 'Korean'),
-(2, 'Redmi', 'Xiaomi', 'China'),
-(3, 'Apple', 'Apple Inc.', 'USA'),
-(4, 'Oppo', 'OPPO Electronics', 'China'),
-(5, 'Nokia', 'Nokia', 'Findland');
+(1, 'Ranger', 'Ford', 'USA'),
+(2, 'Land Cruiser', 'Toyota', 'Japan'),
+(3, 'Brezza', 'Suzuki', 'Japan'),
+(4, 'Nexon EV', 'Tata', 'India'),
+(5, 'Kona', 'Hyundai', 'South KoreaLAND CRUISER');
 
 -- --------------------------------------------------------
 
@@ -134,19 +134,23 @@ CREATE TABLE `product` (
 --
 
 INSERT INTO `product` (`id`, `name`, `brand`, `price`, `image`) VALUES
-(1, 'Samsung Galaxy 10', 1, 152.00, './assets/products/car01.jpg'),
-(2, 'Redmi Note 7', 2, 122.00, './assets/products/car01.jpg'),
-(3, 'Redmi Note 6', 2, 112.00, './assets/products/car01.jpg'),
-(4, 'Redmi Note 5', 2, 102.00, './assets/products/car01.jpg'),
-(5, 'Redmi Note 4', 2, 82.00, './assets/products/car01.jpg'),
-(6, 'Redmi Note 8', 2, 132.00, './assets/products/car01.jpg'),
-(7, 'Redmi Note 9', 2, 142.00, './assets/products/car01.jpg'),
-(8, 'Samsung Galaxy A23', 1, 122.00, './assets/products/car01.jpg'),
-(9, 'Samsung Galaxy S6', 1, 122.00, './assets/products/car01.jpg'),
-(10, 'Samsung Galaxy S7', 1, 132.00, './assets/products/car01.jpgg'),
-(11, 'Apple iPhone X', 3, 82.00, './assets/products/car01.jpg'),
-(12, 'iPhone 13 ProMax', 3, 142.00, './assets/products/car01.jpg'),
-(13, 'iPhone 12 Pro', 3, 122.00, './assets/products/car01.jpg');
+(1, 'NEXT GEN RAPTOR', 1, 21500000.00, './assets/products/car01.jpg'),
+(2, 'LAND CRUISER 70', 2, 122.00, './assets/products/car02.jpg'),
+(3, 'RAIZE', 2, 6850000.00, './assets/products/car03.jpg'),
+(4, 'LAND CRUISER PRADO', 2, 28300000.00, './assets/products/car04.jpg'),
+(5, 'FOrtuner ', 2, 22200000.00, './assets/products/car05.jpg'),
+(6, 'RAV 4 ', 2, 16300000.00, './assets/products/car06.jpg'),
+(7, 'RAV 4', 2, 16300000.00, './assets/products/car06.jpg'),
+(8, 'Ranger 3.2L(DIESEL) XL A/T', 1, 10100000.00, './assets/products/car08.jpg'),
+(9, 'Everest 2.0L Bi-Turbo (DIESEL) TITANIUM 4x4A/T', 1, 21700000.00, './assets/products/car09.jpg'),
+(10, 'Next Gen Ranger 2.OL (DIESEL) XL A/T', 1, 11090000.00, './assets/products/car10.jpgg'),
+(11, 'Brezza Lxi', 3, 4499000.00, './assets/products/car11.jpg'),
+(12, 'Fronx Delta', 3, 4199000.00, './assets/products/car12.jpg'),
+(13, 'Jimny Zeta', 3, 5999000.00, './assets/products/car13.jpg');
+(14, 'Grand Vitara Alpha+ Dual', 3, 9729000.00, './assets/products/car14.jpg');
+(15, 'Creta SX', 5, 6798000.00, './assets/products/car15.jpg');
+(16, 'Tulson GLX 4WD TURBO ', 5, 16296000.00, './assets/products/car16.jpg');
+(17, 'KONA GLS ', 5, 6496000.00, './assets/products/car17.jpg');
 
 -- --------------------------------------------------------
 
@@ -193,12 +197,12 @@ CREATE TABLE `user` (
 ---- Dumping data for table `user`
 --
 
-INSERT INTO `user` (`id`, `fullname`, `phone`, `avatar`, `city`, `gender`, `address`, `money`) VALUES
+INSERT INTO `user` (`id`, `fullname`, `phone`, `city`, `gender`, `address`, `money`) VALUES
 (0, 'Guest', NULL, NULL, 'VN', 0, NULL, 0.00),
-(1, 'Admin', '0943284322', 'https://www.shareicon.net/data/128x128/2016/05/26/771187_man_512x512.png', 'VN', 0, NULL, 99999.99),
-(2, 'David', '0828382237', 'https://www.shareicon.net/data/128x128/2016/05/26/771188_man_512x512.png', 'US', 0, NULL, 50.00),
-(3, 'Lenin', '0723923232', 'https://www.shareicon.net/data/128x128/2016/05/26/771186_people_512x512.png', 'UK', 1, NULL, 100.00),
-(4, 'Kevin', '0932733612', 'https://www.shareicon.net/data/128x128/2016/05/26/771187_man_512x512.png', 'FR', 0, NULL, 10.00);
+(1, 'Admin', '0943284322', 'VN', 0, NULL, 99999.99),
+(2, 'David', '0828382237', 'US', 0, NULL, 50.00),
+(3, 'Lenin', '0723923232', 'UK', 1, NULL, 100.00),
+(4, 'Kevin', '0932733612', 'FR', 0, NULL, 10.00);
 
 --
 -- Indexes for dumped tables
