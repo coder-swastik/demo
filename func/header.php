@@ -74,22 +74,22 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav m-auto">
                     <li class="nav-item active">
-                        <a class="nav-link" href="./index.html">Home</a>
+                        <a class="nav-link" href="./index.php">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#top-sale">Cars</a>
+                        <a class="nav-link" href="./index.php#top-sale">Cars</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#2-Wheelers">2-Wheelers</a>
+                        <a class="nav-link" href="./index.php#2-Wheelers">2-Wheelers</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#special-price">Special Price</a>
+                        <a class="nav-link" href="./index.php#special-price">Special Price</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./index.html#new-phones">Second Hand</a>
+                        <a class="nav-link" href="./index.php#new-phones">Second Hand</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="./cart.html">Cart</a>
+                        <a class="nav-link" href="./cart.php">Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Coming Soon</a>
