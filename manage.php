@@ -1,3 +1,4 @@
+<script src="script.js"></script>
 <?php
 ob_start();
 // include header.php file

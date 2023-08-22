@@ -110,11 +110,11 @@ $(document).ready(function () {
                 </td>
                 <td>
                     <select name="brand-${$manageProductItems}">
-                        <option value="1">Samsung</option>
-                        <option value="2">Redmi</option>
-                        <option value="3">Apple</option>
-                        <option value="4">Oppo</option>
-                        <option value="5">Nokia</option>
+                        <option value="1">Ranger</option>
+                        <option value="2">Land Cruiser</option>
+                        <option value="3">Brezza</option>
+                        <option value="4">Nexon EV</option>
+                        <option value="5">Kona</option>
                     </select>
                 </td>
                 <td>
